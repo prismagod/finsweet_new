@@ -1,0 +1,98 @@
+.solutions {
+	position: relative;
+	min-height: 665px;
+	background-color: $light-blue;
+	&__body {
+		display: flex;
+		flex-direction: column;
+		margin: 0 -15px;
+	}
+}
+
+	.text-section {
+		margin-top: 98px;
+		display: flex;
+		flex: 1 1 auto;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		padding: 0 15px;
+	&__item {
+
+	}
+}
+.item-text {
+	max-width: 620px;
+
+	&__title {
+		color: $dark-blue;
+		font-weight: 600;
+		font-size: 36px;
+		line-height: 44px;
+		letter-spacing: -0.03em;
+	}
+
+	&__text {
+		color: $black;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 30px;
+	}
+}
+.card-section {
+	margin-top: 64px;
+	padding: 0 15px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+.card-item {
+	width: 400px;
+	height: 277px;
+	display: flex;
+	flex: 1 1 auto;
+	flex-flow: column nowrap;
+	background-color: $white;
+	padding: 48px 26px 37px 39px;
+	border-radius: 20px;
+
+	&__icon {
+	}
+
+	&__title {
+	margin-top: 32px;
+	color: $dark-blue;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 26px;
+	letter-spacing: -0.03em;
+	}
+
+	&__text {
+	margin-top: 16px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 28px;
+	color: rgba(29, 52, 68, 0.8)
+	}
+}
+
+//TODO доверстать адаптив дома
+
+.card-item:not(:first-child) {
+	margin: 0 0 0 38px;
+}
+
+@media (max-width: 1310px) {
+.card-section {
+	justify-content: space-between;
+}
+	.card-item:not(:last-child) {
+		flex: 0 1 49%;
+		margin: 0 0 20px 0;
+	}
+	.card-item:last-child {
+		flex: 1 1 100%;
+		margin: 0;
+	}
+}

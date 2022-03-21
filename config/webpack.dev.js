@@ -17,7 +17,7 @@ if (!pugPages.length) {
 		source: srcFolder,
 		htmlBeautifyOptions: {
 			"indent-with-tabs": true,
-			'indent_size': 3
+			'indent_size': 2
 		},
 		replace: [
 			{ regex: '<link rel="stylesheet" href="css/style.min.css">', to: '' },
